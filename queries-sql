@@ -240,3 +240,9 @@ FROM employee; -- formats the number to add comma. The second argument(0 here) r
 
 SELECT ename,LEFT(job_desc,4)
 FROM employee; -- returns only the first 4 characters of the ename
+
+SELECT CURDATE() 'start date',
+ DATE_ADD(CURDATE(),INTERVAL 1 DAY) 'one day later',
+ DATE_ADD(CURDATE(),INTERVAL 1 WEEK) 'one week later',
+ DATE_ADD(CURDATE(),INTERVAL 1 MONTH) 'one month later',x
+ DATE_ADD(CURDATE(),INTERVAL 1 YEAR) 'one year later';
